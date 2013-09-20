@@ -6,12 +6,12 @@ Marketing tool which for a given blog it will crawl and gather information about
 The tool is uncompleted because it is a side project to learn Ruby and Rails.
 
 The idea is to build a marketing tool that works for every blog. Given an URL, the tool should crawl all internall links, and for every link that represents an article it do some actions:
-*
+
 * counts number o words;
 * counts number of links;
 * counts number of headins;
 * give number of shares on Facebook, Twitter and LinkedIn
-* 
+ 
 
 This tool take some advantages of other technologies such as Anemone, Nokigiri and boilerpipe.
 
