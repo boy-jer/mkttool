@@ -12,7 +12,7 @@ class SearchController < ApplicationController
       search
     end
     @blogs = Post.where(:name => /.*#{params[:url]}.*/i)
-    @search = @blogs.paginate(:per_page=>10, :page => params[:page])#, :conditions =>{:name=> 'http://blog.bufferapp.com'})
+    @search = @blogs.paginate(:per_page=>10, :page => params[:page])
     if request.xhr?
       sleep(3)
       render :partial => @search
